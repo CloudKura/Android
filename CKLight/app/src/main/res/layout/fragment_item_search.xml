@@ -1,0 +1,72 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fragment_item_search_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_dialog_title"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="@string/left_menu_setting"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/fragment_item_search_button_cancel"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignEnd="@+id/fragment_item_search_title"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_cancel" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_item_search_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <include
+            layout="@layout/row_edit_item_memo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageButton
+            android:id="@+id/fragment_item_search_button_search"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="-10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_button_normal_snap"
+            android:src="@drawable/ic_search_word"
+            />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/fragment_item_search_row_item_barcode"
+        layout="@layout/row_edit_item_barcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        />
+
+</LinearLayout>
+

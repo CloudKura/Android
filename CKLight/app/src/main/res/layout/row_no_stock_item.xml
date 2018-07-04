@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:background="@null"
+    >
+
+    <LinearLayout
+        android:id="@+id/row_no_stock_item_layer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/row_no_stock_item_show_input"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_check_box_off"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:id="@+id/row_no_stock_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="start|center"
+            android:layout_weight="1"
+            android:lines="2"
+            android:text="１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０"
+            android:textColor="@color/colorNormal"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/row_no_stock_item_barcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12345678901234567890"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/row_no_stock_item_thumbnail_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/no_photo"
+            android:padding="1dp"
+            android:background="@drawable/ic_image_frame"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/row_no_stock_item_input_layer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp"
+        android:layout_margin="3dp"
+        android:background="@color/colorRegistDialogBackground"
+        >
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|end"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:gravity="end|center_vertical"
+                android:text="@string/delete_item"
+                android:textColor="@color/colorExclamation"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                />
+
+            <ImageButton
+                android:id="@+id/row_no_stock_item_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_delete_stock"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/delete_item_confirm"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            />
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/row_no_stock_button_rakuten"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/ic_button_rakuten"
+                android:text="@string/button_buy_on_weburl1"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/row_no_stock_button_yahoo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/button_buy_on_weburl2"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@drawable/ic_button_yahoo"
+                android:textSize="14dp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:textColor="@color/colorCloseText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:textSize="6pt"
+                android:text="@string/delete_item"
+                android:gravity="center"
+                />
+
+            <ImageButton
+                android:id="@+id/row_no_stock_item_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_delete_stock"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@android:color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:textColor="@color/colorCloseText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="6pt"
+                    android:text="@string/limit_day_tab"
+                    android:gravity="center|start"
+                    />
+
+                <com.cloudkura.light.MyDatePicker
+                    android:id="@+id/row_no_stock_limit_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner"
+                    android:spinnersShown="true"
+                    android:gravity="center"
+                    android:divider="@null"
+                    android:scaleX=".8"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginStart="-20dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2.2"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:textColor="@color/colorCloseText"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="6pt"
+                    android:text="@string/message_title_count"
+                    android:gravity="center|start"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginStart="-10dp"
+                    >
+                    <com.cloudkura.light.MyNumberPicker
+                        android:id="@+id/row_no_stock_count_10"
+                        android:layout_width="40dp"
+                        android:layout_height="80dp"
+                        android:divider="@null" />
+                    <com.cloudkura.light.MyNumberPicker
+                        android:id="@+id/row_no_stock_count_1"
+                        android:layout_width="40dp"
+                        android:layout_height="80dp"
+                        android:divider="@null"
+                        />
+                    <!--
+                    <NumberPicker
+                        android:id="@+id/row_no_stock_count_10"
+                        android:layout_width="40dp"
+                        android:layout_height="100dp"
+                        android:divider="@null" />
+                    <NumberPicker
+                        android:id="@+id/row_no_stock_count_1"
+                        android:layout_width="40dp"
+                        android:layout_height="100dp"
+                        android:divider="@null"
+                        />
+                    -->
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/row_no_stock_buttons"
+            layout="@layout/row_item_new_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom"
+            />
+
+    </LinearLayout>
+</LinearLayout>

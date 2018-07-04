@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorHomeBackColor"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/fragment_no_stock_item_list_settings_layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginEnd="30dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/colorCloseText"
+                android:textSize="5pt"
+                android:text="@string/message_is_display_checked_item"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/setting_not_display"
+                android:textColor="@color/colorCloseText"
+                android:textSize="5pt"
+                />
+
+            <Switch
+                android:id="@+id/fragment_no_stock_list_display_checked_item"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:checked="false"
+                android:gravity="center"
+                android:textColor="@color/colorCloseText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/setting_display"
+                android:textColor="@color/colorCloseText"
+                android:textSize="5pt"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fragment_no_stock_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wishlist_title"
+            android:textSize="13dp"
+            android:textColor="@color/colorAccent"
+            android:gravity="start"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:background="@color/colorOnTouchAnim"
+            />
+
+        <ListView
+            android:id="@+id/fragment_no_stock_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorHomeBackColor"
+            android:minHeight="100dp"
+            android:verticalSpacing="4dp"
+            android:smoothScrollbar="true"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fragment_no_stock_item_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingBottom="40dp"
+        android:text="@string/message_no_pre_consumption_item"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+</FrameLayout>
+

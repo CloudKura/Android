@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/row_edit_item_thumbnail_layer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/row_edit_item_thumbnail_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/no_photo"
+            android:padding="2dp"
+            android:background="@drawable/ic_image_frame"
+            />
+
+        <LinearLayout
+            android:id="@+id/row_edit_item_image_item_name_layer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/row_edit_item_thumbnail_item_name_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_item_title_memo"
+                android:textColor="@color/colorCloseText"
+                android:textSize="6pt"
+                android:gravity="start"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:id="@+id/row_edit_item_thumbnail_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０"
+                android:textColor="@color/colorNormal"
+                android:textSize="7pt"
+                android:gravity="start"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

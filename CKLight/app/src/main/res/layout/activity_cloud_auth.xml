@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:fitsSystemWindows="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/colorAccent"
+        >
+
+        <ImageView
+            android:id="@+id/ivCloudKura"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:src="@mipmap/ic_splash" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textSize="38dp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/colorTextColor"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_message"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@color/colorTextColor"
+            />
+
+        <!--
+        <TextView
+            android:id="@+id/activity_auth_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_us"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorTextColor"
+            />
+        -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.4"
+        android:gravity="center"
+        >
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/activity_auth_google_sign_in_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

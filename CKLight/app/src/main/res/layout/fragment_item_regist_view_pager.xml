@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_item_new_base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dialog"
+            >
+
+            <TextView
+                android:id="@+id/fragment_item_new_view_pager_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_dialog_title"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/fragment_item_new_view_pager_button_cancel"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignEnd="@+id/fragment_item_new_view_pager_title"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_cancel" />
+        </RelativeLayout>
+
+        <com.cloudkura.light.MyNoScrollViewPager
+            android:id="@+id/fragment_item_new_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:paddingEnd="2dp"
+            android:paddingStart="2dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+

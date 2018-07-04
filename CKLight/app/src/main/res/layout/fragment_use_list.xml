@@ -1,0 +1,170 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_popup_frame"
+    android:focusableInTouchMode="true"
+    >
+
+    <TextView
+        android:id="@+id/fragment_item_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/message_no_item"
+        android:textSize="18dp"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:paddingBottom="40dp"
+        android:background="@drawable/ic_popup_frame"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fragment_use_list_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_dialog_title"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/fragment_use_list_button_close"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignEnd="@+id/fragment_use_list_title"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_cancel" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_item_search_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <include
+                layout="@layout/row_edit_item_memo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+            <ImageButton
+                android:id="@+id/fragment_item_search_button_search"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="-10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_button_normal_snap"
+                android:src="@drawable/ic_search_word"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_item_search_select_status"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorHomeBackColor"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/fragment_use_list_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end|center"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_back"
+                android:textColor="@color/colorCloseText"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/fragment_use_list_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/colorStatusInfo"
+                android:textSize="14sp"
+                />
+
+            <Button
+                android:id="@+id/fragment_use_list_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end|center"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_action_del"
+                android:textColor="@color/colorCloseText"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/fragment_use_list_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorHomeBackColor"
+            android:columnWidth="100dp"
+            android:minHeight="100dp"
+            android:gravity="center"
+            android:layout_margin="0dp"
+            android:horizontalSpacing="2dp"
+            android:verticalSpacing="2dp"
+            android:numColumns="3"
+            android:smoothScrollbar="true"
+            android:stretchMode="columnWidth"
+            />
+
+        <LinearLayout
+            android:id="@+id/fragment_use_list_footer_delete"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:background="#ffffff">
+
+            <Button
+                android:id="@+id/fragment_use_list_cancel_selected_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_button_normal"
+                android:text="@string/release_selected_item"
+                android:textSize="8pt"
+                android:textColor="@color/colorTextColor" />
+
+            <Button
+                android:id="@+id/fragment_use_list_del_selected_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_button_exclamation"
+                android:text="@string/delete_item"
+                android:textSize="8pt"
+                android:textColor="@color/colorTextColor" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
+

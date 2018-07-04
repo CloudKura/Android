@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/ic_popup_frame"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fragment_item_settings_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_dialog_title"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="@string/left_menu_setting"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/fragment_item_settings_button_cancel"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignEnd="@+id/fragment_item_settings_title"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_cancel" />
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="@color/colorCloseText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:lines="2"
+        android:textSize="12dp"
+        android:text="@string/messeage_setting_alert_notify"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_margin="5dp"
+            android:gravity="start"
+            android:text="@string/left_menu_alert_onoff_title"
+            android:textColor="@color/colorNormal"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="25dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:text="@string/messeage_setting_dont_do"
+                android:textColor="@color/colorNormal"
+                android:textSize="14dp" />
+
+            <Switch
+                android:id="@+id/fragment_setting_alert_onoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/colorNormal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/messeage_setting_do"
+                android:textColor="@color/colorNormal"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_limit_day_settings_days"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="16dp"
+            android:textColor="@color/colorNormal"
+            android:text="@string/left_menu_alert_span_title"
+            android:gravity="start"
+            android:layout_gravity="start"
+            />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="25dp"
+            android:gravity="center"
+            >
+            <com.cloudkura.light.MyNumberPicker
+                android:id="@+id/fragment_setting_alert_span"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                />
+            <!--
+            <NumberPicker
+                android:id="@+id/fragment_setting_alert_span"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                />
+            -->
+            <TextView
+                android:textColor="@color/colorNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textSize="14dp"
+                android:text="@string/messeage_setting_days_ago"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fragment_item_settings_button_commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_button_regist"
+        android:text="@string/regist_button"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        android:focusableInTouchMode="true"
+        />
+
+</LinearLayout>

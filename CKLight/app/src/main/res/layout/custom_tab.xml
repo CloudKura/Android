@@ -1,0 +1,8 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="start|center_vertical"
+    android:background="@color/colorTabBackColor"
+    android:textColor="@color/colorAccent"
+    />

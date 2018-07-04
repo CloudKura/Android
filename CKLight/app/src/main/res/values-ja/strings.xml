@@ -1,0 +1,260 @@
+<resources>
+    <string name="app_name">Cloud Kura</string>
+    <string name="webauth_title">認証</string>
+    <string name="websync_title">基本情報</string>
+
+    <!-- Cloud Kura Web Site URL -->
+    <string name="web_cloudkura_main">https://cloudkura.com/</string>
+    <string name="web_cloudkura_howtouse">https://cloudkura.com/cloudkura-howtouse/</string>
+    <string name="web_cloudkura_about">https://cloudkura.com/about/</string>
+
+    <!-- 商品検索結果表示URL -->
+    <string name="weburl1">https://search.rakuten.co.jp/search/mall/</string>
+    <string name="weburl2">https://shopping.yahoo.co.jp/search?p=</string>
+
+    <!-- Webサービス -->
+    <string name="webapi_root_url">https://cloudkura.sakura.ne.jp/ck/</string>
+    <string name="webapi_image_dir">data/items/</string>
+    <string name="webapi_reg_user_session">api/reg_user_session.php</string>
+    <string name="webapi_reg_user_dbdata">api/reg_user_dbdata.php</string>
+    <string name="webapi_get_item_list">api/get_item_list.php</string>
+    <string name="webapi_get_item_by_barcode">api/get_item_by_barcode.php</string>
+    <string name="webapi_get_synonym">api/get_memo_list.php</string>
+
+    <!-- UPC検索用URL -->
+    <string name="web_api_search_upc_url">https://www.barcodespider.com/</string>
+
+    <!-- 楽天API情報 -->
+    <string name="web_api_rakuten_url">https://app.rakuten.co.jp/services/api/IchibaItem/Search/20140222?format=json</string>
+    <string name="web_api_rakuten_application_id">1083495911012074286</string>
+    <string name="web_api_rakuten_application_secret">963091e10886d56ee39caf0cb153662f05f14c03</string>
+    <string name="web_api_rakuten_affiliate_id">15920cba.178695fa.15920cbb.b4a56e25</string>
+
+    <!-- for test
+    <string name="rewarded_video_ad_unit_id">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+     -->
+
+    <!-- for cloudkura2017 -->
+    <!-- 未使用
+    <string name="rewarded_video_ad_unit_id">ca-app-pub-4696816491799748/7479426311</string>
+    -->
+    <string name="banner_ad_unit_id">ca-app-pub-4696816491799748/8033303544</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-4696816491799748/2610243014</string>
+
+
+    <!-- バーコード読取の時間(単位:秒) -->
+    <string name="barcode_detect_count_down_second_time">7</string>
+
+    <!-- アラート -->
+    <string name="notification_app_title">Cloud Kuraからのお知らせ</string>
+    <string name="notification_app_message">消費期限について. </string>
+
+    <!-- アラートダイアログ -->
+    <string name="alert_dialog_title_confirm">確認</string>
+    <string name="alert_dialog_button_yes">はい</string>
+    <string name="alert_dialog_button_no">いいえ</string>
+
+    <!-- 蔵追加メッセージ -->
+    <string name="message_add_stock_list">反映しました</string>
+    <string name="message_delete_item">削除しました</string>
+
+    <!-- 画面項目名 -->
+    <string name="item_no_name">（商品名は未登録）</string>
+    <string name="remain_days_display_label">残り　</string>
+    <string name="passed_days_display_label">期限切れ</string>
+    <string name="days_display">%d 日</string>
+    <string name="search_button">検　索</string>
+    <string name="regist_button">登　録</string>
+
+    <!-- 分類タイトル -->
+    <string name="graph_title">円グラフ</string>
+    <string name="limit_day_tab">消費期限</string>
+    <string name="wishlist_title">買物リスト</string>
+
+    <!-- 消費期限 -->
+    <string name="limit_day_over">期限切れ</string>
+    <string name="limit_day_in1month">30日以内</string>
+    <string name="limit_day_in1year">31日～1年以内</string>
+    <string name="limit_day_other">1年超</string>
+    <string name="limit_day_alert">期限切れ～通知期間</string>
+
+    <string name="limit_day_over_detail">期限切れ</string>
+    <string name="limit_day_in1month_detail">30日以内</string>
+    <string name="limit_day_in1year_detail">31日～1年以内</string>
+    <string name="limit_day_other_detail">1年超</string>
+
+    <!-- 管理する：一覧画面の説明文 -->
+    <string name="manage_delete_explain">タップで選択</string>
+
+    <!-- 状況説明文 -->
+    <string name="status_explain_no_data">商品の登録がありません</string>
+    <string name="status_explain_passed_limit_day_item">期限切れの商品があります</string>
+    <string name="status_explain_in_half_year_limit">期限が１か月以内の商品があります</string>
+    <string name="status_explain_satisfiction">期限の心配はありません</string>
+
+    <!-- バーコード認識時のメッセージ -->
+    <string name="recognise_barcode_init">認識したバーコードから商品を表示します</string>
+    <string name="recognise_barcode_search_item_info">バーコードを認識しました\n商品を検索しています</string>
+
+    <!-- タブ名 -->
+    <string name="tab_title_home">ホーム</string>
+    <string name="tab_title_itemlist">商品</string>
+    <string name="tab_title_no_stock">買物リスト</string>
+
+    <!-- 左ナビゲーションドローワー -->
+    <string name="navigation_drawer_open">drawer_open</string>
+    <string name="navigation_drawer_close">drawer_close</string>
+    <string name="left_menu_setting">消費期限の通知</string>
+    <string name="left_menu_alert_onoff_title">　　通　　知</string>
+    <string name="left_menu_alert_span_title">　　開始日数</string>
+    <string name="left_menu_do">する</string>
+    <string name="left_menu_not_do">しない</string>
+    <string name="left_menu_display">表示する</string>
+    <string name="left_menu_not_display">表示しない</string>
+    <string name="left_menu_other_setting">その他の設定</string>
+    <string name="left_menu_show_last_launched_datetime">　　最終アクセス日時</string>
+    <string name="left_menu_show_notice_popup">　　お知らせの表示</string>
+    <string name="left_menu_show_display_colnum">　　商品一覧の画像を大きく表示</string>
+    <string name="left_menu_show_display_unit">　　商品単位にまとめて表示</string>
+    <string name="left_menu_show_no_stock_item">　　ストックなし商品の表示</string>
+    <string name="left_menu_show_under_button">　　アンダーボタンの表示</string>
+    <string name="left_menu_copy_right">© 2017 Cloud Kura inc.</string>
+    <string name="left_menu_move_to_web_link">利用方法の詳細はこちらへ\n(クラウドクラWEBへ移動)</string>
+    <string name="left_menu_web_sync">クラウドバックアップ</string>
+    <string name="left_menu_web_sync_status_offline">---</string>
+
+    <!-- 登録画面 -->
+    <string name="edit_item_title_image">商品画像</string>
+    <string name="edit_item_title_memo">商品名</string>
+    <string name="edit_item_title_stock">消費期限・数量</string>
+
+    <!-- 削除関連 -->
+    <string name="delete_item_notice_title">削除しました</string>
+    <string name="delete_item_confirm">商品を追加しませんか？</string>
+    <string name="delete_item_notice_affiriate">アフィリエイトリンクが開きます</string>
+
+    <string name="permission_name_strage">ストレージ</string>
+    <string name="permission_name_camera">カメラ</string>
+    <string name="permission_name_system_alert">オーバーレイ</string>
+
+    <string name="no_item">商品なし</string>
+    <string name="stop_photographing">撮影中止</string>
+    <string name="regist_title_add">追　加</string>
+    <string name="regist_title_edit">編　集</string>
+    <string name="regist_next_button">次　へ</string>
+    <string name="regist_prev_button">戻　る</string>
+    <string name="regist_regist_button">登　録</string>
+    <string name="regist_update_button">更　新</string>
+    <string name="regist_cancel_button">キャンセル</string>
+    <string name="regist_add_list_button">商品へ追加</string>
+    <string name="regist_title_image">商品画像</string>
+    <string name="regist_title_scan_barcode">バーコード読取</string>
+    <string name="notify_over_limit_day">期限切れ:</string>
+    <string name="notify_today">本日:</string>
+    <string name="notify_in_days">日以内:</string>
+    <string name="notify_in_future_limit">今後の期限 -</string>
+    <string name="notify_item_unit">個</string>
+    <string name="search_by_barcode">バーコード検索</string>
+    <string name="search_by_item_name">商品名検索</string>
+    <string name="menu_regist_item">商品登録</string>
+    <string name="menu_regist_wishlist">買物リスト登録</string>
+    <string name="menu_delete_item_by_barcode">バーコード削除</string>
+    <string name="menu_delete_item_by_item_name">商品名検索／削除</string>
+    <string name="menu_delete_item_by_item_name_comment">手入力登録した商品の削除はこちらから</string>
+    <string name="message_not_connect_change_manual">ネットワークに未接続です\n手入力登録に切り替えますか？</string>
+    <string name="message_not_connect_network">ネットワークに未接続です</string>
+    <string name="message_item_not_found_change_manual">商品情報が見つかりません\n手入力登録に切り替えますか？</string>
+    <string name="message_cancel_editing_close_dialog">編集をキャンセルして\n画面を閉じますか？</string>
+    <string name="message_not_scan_barcode_change_manual">バーコードを読み取れません\n手入力登録に切り替えますか？</string>
+    <string name="message_failed_save_image">画像の保存に失敗しました</string>
+    <string name="message_failed_create_directory">フォルダの作成に失敗しました</string>
+    <string name="message_failed_delete_image">画像ファイルを\n削除できませんでした</string>
+    <string name="message_not_specify_url">URLが指定されていません</string>
+    <string name="message_not_scan_barcode">バーコードを読み取れませんでした</string>
+    <string name="message_not_ready_barcode_recognitive_by_not_enough_strage">容量不足のためバーコード認識に\n必要な機能を準備できません</string>
+    <string name="message_already_regsited_same_limitday_item">同じ消費期限がすでに登録されています\n\n数量を追加しますか？\n\n</string>
+    <string name="message_add_stock_limit_day">消費期限：</string>
+    <string name="message_add_stock_count">　数量　：</string>
+    <string name="message_add_stoc_count_before_after_sign"><![CDATA[->]]></string>
+    <string name="message_not_add_by_limit_over">数量の上限を超えるため\n追加できません\n\n数量の上限：</string>
+    <string name="message_title_count">数量</string>
+    <string name="message_input_count">数量を入力してください</string>
+    <string name="message_title_image">商品画像</string>
+    <string name="message_appoint_image">指定してください</string>
+    <string name="message_in_item_name">商品名に「</string>
+    <string name="message_contain_in_item_name">」を含む</string>
+    <string name="message_title">バーコード:</string>
+    <string name="message_all_item">すべての商品</string>
+    <string name="message_explain_tap_to_select">商品削除（タップで選択）</string>
+    <string name="message_please_select">選択してください</string>
+    <string name="message_confirm_delete">削除しますか？</string>
+    <string name="message_confirm_hide">買物リストから削除しますか？</string>
+    <string name="message_not_regist_item_name">(商品名 未登録)</string>
+    <string name="message_select_count">選択数: </string>
+    <string name="message_sum_count">総数 </string>
+    <string name="message_no_detail_info">詳細情報がありません</string>
+    <string name="message_confirm_delete_item">商品を削除しますか？\n\n商品情報とすべての消費期限・数量が削除されます</string>
+    <string name="no_item_no_display_data">商品が登録されていないため\n表示するデータはありません</string>
+    <string name="lets_start_control_item">商品を登録して\n管理をはじめましょう</string>
+    <string name="release_selected_item">選択解除</string>
+    <string name="delete_item">削　除</string>
+    <string name="item_prop_barcode">バーコード</string>
+    <string name="messeage_setting_alert_notify">消費期限の近い商品をお知らせする\nアラート通知について設定します</string>
+    <string name="messeage_setting_dont_do">しない</string>
+    <string name="messeage_setting_do">する</string>
+    <string name="messeage_setting_days_ago">日前</string>
+    <string name="setting_title_display_setting">表示</string>
+    <string name="no_stock_input_hide">非表示</string>
+    <string name="messeage_setting_image_size">画像を大きく表示するか設定します\n（表示する:2列、しない:3列で一覧表示）</string>
+    <string name="setting_not_display">表示しない</string>
+    <string name="setting_display">表示する</string>
+    <string name="messeage_setting_summary_each_item">一覧表示を商品ごとにまとめるか設定します\n（まとめると一覧には最初の消費期限を表示）</string>
+    <string name="messeage_setting_display_no_stock_item">ストックのない商品を\n商品一覧に表示するか設定します</string>
+    <string name="messeage_setting_show_shortcut_buttons">商品の新規登録ボタン、検索ボタンを\n画面下部に表示します</string>
+    <string name="messeage_setting_display_notify_dialog_on_launch">アプリを起動したときに\nお知らせ画面を表示するか設定します</string>
+    <string name="message_no_item">商品はありません</string>
+    <string name="message_no_pre_consumption_item">消費済みの商品はありません</string>
+    <string name="delete_selected_item_sign">×</string>
+    <string name="button_buy_on_weburl1">楽天で購入</string>
+    <string name="button_buy_on_weburl2">Yahoo!で購入</string>
+    <string name="button_add_to_buy_list">買物リストに表示</string>
+    <string name="button_delete_item">商品を削除</string>
+    <string name="close_dialog">閉じる</string>
+    <string name="message_is_display_checked_item">追加済み商品</string>
+    <string name="message_scan_barcode_on_item">商品からバーコードを\n読み込んでください</string>
+    <string name="button_photography_item">商品撮影</string>
+    <string name="message_cant_change_image_name_after_regist">登録後は商品画像・商品名を変更できません</string>
+    <string name="message_input_item_name">商品名を入力してください</string>
+    <string name="message_no_stock">ストックはありません</string>
+    <string name="message_confirm_quit">終了しますか？</string>
+
+    <string name="message_permission_alert_title">パーミッション取得エラー</string>
+    <string name="message_permission_alert_confirm">アプリの使用には[@1]へのアクセス許可が必要です。\n再試行しますか？</string>
+    <string name="message_permission_alert_reset">今後は許可しないが選択されました。アプリ設定＞権限をチェックしてください。\n（ボタンをONにしてください）</string>
+
+    <string name="item_list_display_limit_date">日付を表示</string>
+    <string name="item_list_display_order_item">商品ごとに並べる</string>
+
+    <!-- Auth -->
+    <string name="welcome">ようこそ</string>
+    <string name="welcome_message">- Cloud Kuraで安心を簡単に -</string>
+    <string name="signin">サインイン</string>
+    <string name="signout">サインアウト</string>
+    <string name="in_progress">処理しています・・・</string>
+    <string name="signin_success">認証に成功しました。</string>
+    <string name="signin_failed">認証に失敗しました。</string>
+    <string name="about_us">About Us</string>
+    <string name="tap_to_sync">タップで同期</string>
+
+    <!-- sync setting -->
+    <string name="sync_setting_start">初期設定を実施します。</string>
+    <string name="sync_setting_sync_now">いますぐ同期</string>
+    <string name="sync_result_no_sync_data">最新の状態です。</string>
+    <string name="sync_in_process">(同期中)</string>
+
+    <!-- Widget -->
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>

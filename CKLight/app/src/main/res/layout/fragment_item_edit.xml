@@ -1,0 +1,47 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/fragment_item_edit_close_button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="-45dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_cancel" />
+
+        <include
+            android:id="@+id/fragment_item_edit_row_item_image"
+            layout="@layout/row_edit_item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp" />
+
+        <include
+            android:id="@+id/fragment_item_edit_row_item_info"
+            layout="@layout/row_edit_item_memo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--
+        <include
+            android:id="@+id/fragment_item_edit_row_stock_list"
+            layout="@layout/row_edit_item_stock_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        -->
+    </LinearLayout>
+</LinearLayout>
+

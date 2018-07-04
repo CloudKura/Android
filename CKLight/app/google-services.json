@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "618577535933",
+    "firebase_url": "https://cloudkuralight.firebaseio.com",
+    "project_id": "cloudkuralight",
+    "storage_bucket": "cloudkuralight.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618577535933:android:5f6b366e97b02ae3",
+        "android_client_info": {
+          "package_name": "com.cloudkura.light"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618577535933-spt3f31t1ej1j1afrktv0cfmds59iuot.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cloudkura.light",
+            "certificate_hash": "0751ea9a7cbc9a0ee6533b2aa48d13fc1030f543"
+          }
+        },
+        {
+          "client_id": "618577535933-ao825a7n5s80lm4g97f46s7urlh4ff31.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cloudkura.light",
+            "certificate_hash": "0551021be3aff98177c4d3976afe90fe7faeaef0"
+          }
+        },
+        {
+          "client_id": "618577535933-lnj0ueh55edi32ikqsg17rhk65b71gbo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdT-jFSuMr8JyL4-kEHpCWmMfyfeAZsyM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618577535933-lnj0ueh55edi32ikqsg17rhk65b71gbo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- 行番号 -->
+        <TextView
+            android:id="@+id/row_graph_legend_row_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:visibility="gone"
+            />
+
+        <!-- 色 -->
+        <View
+            android:id="@+id/row_graph_legend_color"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_red_light" />
+
+        <!-- ラベル -->
+        <TextView
+            android:id="@+id/row_graph_legend_label"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:text="31日～1年以内"
+            android:textColor="@color/colorNormal"
+            android:textSize="16dp" />
+
+        <!-- 比率 -->
+        <TextView
+            android:id="@+id/row_graph_legend_rate"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center"
+            android:text="100.0"
+            android:textColor="@color/colorNormal"
+            android:textSize="16dp" />
+
+        <!-- 個数 -->
+        <TextView
+            android:id="@+id/row_graph_legend_count"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center"
+            android:text="1000"
+            android:textColor="@color/colorNormal"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_move_right"
+            >
+        </ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>

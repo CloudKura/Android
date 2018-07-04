@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorTabUnder</item>
+        <!-- ActionBarの高さ -->
+        <item name="actionBarSize">40dp</item>
+        <!-- Switchの色設定 -->
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorSwitchThumbNormal">@color/colorDeleteSelect</item>
+        <item name="android:colorForeground">@color/colorBorderLine</item>
+        <!-- ボタン名の大文字・小文字混在を許可 -->
+        <item name="android:buttonStyle">@style/ButtonEng</item>
+    </style>
+
+    <!-- 確認ダイアログ -->
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/bg_alert_dialog</item>
+    </style>
+
+    <!-- 登録画面でFragmentを全画面表示するためのスタイル -->
+    <style name="NoDimDialogFragmentStyle" parent="@android:style/Theme.Holo.Light">
+        <item name="android:backgroundDimAmount">0.0</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <!-- 登録画面でFragmentを全画面表示するためのスタイル -->
+    <style name="GraphListDialogFragmentStyle" parent="@android:style/Theme.Holo.Light">
+        <item name="android:backgroundDimAmount">2.0</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- DialogFragmentのアニメーション表示 -->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+    <!-- DialogFragmentのアニメーション表示 -->
+    <style name="DialogAnimationX">
+        <item name="android:windowEnterAnimation">@anim/slide_left</item>
+        <item name="android:windowExitAnimation">@anim/slide_right</item>
+    </style>
+    <!-- DialogFragmentのアニメーション表示 -->
+    <style name="DialogAnimationFade">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ButtonEng" parent="Base.Widget.AppCompat.Button">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="FlatRadioButton" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">64px</item> <!-- ボタンの幅。画面の幅とボタンに表示するテキストと選択肢の数で調整する -->
+        <item name="android:paddingTop">10px</item>
+        <item name="android:paddingBottom">10px</item>
+        <item name="android:paddingLeft">5px</item>
+        <item name="android:paddingRight">4px</item>
+        <item name="android:button">@null
+        </item> <!-- ラジオボタンの先頭の画像を表示しないときにこれを指定するらしい。。。ひたすらググった結果判明 -->
+        <item name="android:background">@drawable/flatbutton
+        </item> <!-- ラジオボタンのテキストの背景部分をボタンぽいやつに指定。標準だと背景なし -->
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="colorControlActivated">@color/colorCardBackground</item>
+        <item name="android:textCursorDrawable">@drawable/style_cursor</item>
+        <item name="android:textColor">@color/colorNormal</item>
+        <item name="android:colorControlActivated">@color/colorAccent</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+</resources>

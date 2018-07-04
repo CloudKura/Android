@@ -1,0 +1,34 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_item_new_base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+    <!-- タップアニメーション -->
+    <com.cloudkura.light.MyLayerViewOnTap android:layout_width="0dp" android:layout_height="0dp" />
+
+    <include
+        android:id="@+id/fragment_item_edit_row_item_barcode"
+        layout="@layout/row_edit_item_barcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        />
+
+    <include
+        android:id="@+id/fragment_item_new_buttons"
+        layout="@layout/row_item_new_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="bottom"
+        />
+
+</LinearLayout>
+

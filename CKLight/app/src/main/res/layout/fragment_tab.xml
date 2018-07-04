@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/fragment_page_frame_search_condition"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_margin="3dp"
+                android:textSize="11dp"
+                android:text=""
+                />
+
+            <TextView
+                android:id="@+id/fragment_item_search_condition_string"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:textSize="11dp"
+                android:text=""
+                />
+        </LinearLayout>
+
+        <!-- タブ定義 -->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/fragment_page_frame_tab"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/colorTabBackColor"
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabIndicatorColor="@color/colorAccent"
+            />
+
+        <!-- ページ切り替え用 -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fragment_page_frame_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_weight="1"
+            />
+
+        <!-- 広告欄 : 2018/03/10 全画面広告へ統一のため削除
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+         -->
+
+    </LinearLayout>
+
+</LinearLayout>

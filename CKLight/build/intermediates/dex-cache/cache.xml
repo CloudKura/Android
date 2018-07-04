@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\GitHub\com.cloudkura.light-GP#29\CKLight\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f6386f368de8948e9a815e80cac650bffdabbe5a">
+        <dex dex="D:\GitHub\com.cloudkura.light-GP#29\CKLight\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b22a674adf7065e550fa5a93314b49a9b4e8fff9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\GitHub\com.cloudkura.light-GP#29\CKLight\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="D:\GitHub\com.cloudkura.light-GP#29\CKLight\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_2e739d401a8ab8a4518bedd399202a7f7a5f5419\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\myfro\.android\build-cache\3d9a1adbdf9b4251a39e968e438de08080ee1324\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c44026185adf61f12630db36ac6781481f559e7c">
+        <dex dex="D:\GitHub\com.cloudkura.light-GP#29\CKLight\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6a5488cc2b8870a167ffd834db31f7f01b9c250f\classes.dex" />
+    </item>
+
+</items>

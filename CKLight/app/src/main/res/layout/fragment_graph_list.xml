@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+    <TextView
+        android:id="@+id/fragment_graph_graph_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/graph_title"
+        android:textSize="13dp"
+        android:textColor="@color/colorAccent"
+        android:gravity="start"
+        android:paddingStart="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:background="@color/colorOnTouchAnim"
+        />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/fragment_graph_list_graph"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/fragment_graph_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/limit_day_tab"
+        android:textSize="13dp"
+        android:textColor="@color/colorAccent"
+        android:gravity="start"
+        android:paddingStart="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:background="@color/colorOnTouchAnim"
+        />
+
+    <TextView
+        android:id="@+id/fragment_graph_list_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/lets_start_control_item"
+        android:textSize="18dp"
+        android:textColor="@color/colorAccent"
+        android:gravity="top|center"
+        android:paddingTop="100dp"
+        android:background="@android:color/white"
+        />
+
+    <ListView
+        android:id="@+id/fragment_graph_list_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:smoothScrollbar="true"
+        android:verticalSpacing="0.3dp"
+        android:stretchMode="columnWidth"
+        android:background="@android:color/white"
+        />
+
+</LinearLayout>

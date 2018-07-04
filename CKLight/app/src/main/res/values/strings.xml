@@ -1,0 +1,235 @@
+<resources>
+    <string name="app_name">Cloud Kura</string>
+    <string name="webauth_title">Certification</string>
+    <string name="websync_title">Basic Information</string>
+
+    <!-- Cloud Kura Web Site URL -->
+    <string name="web_cloudkura_main">https://cloudkura.com/</string>
+    <string name="web_cloudkura_howtouse">https://cloudkura.com/en-how-to-use-cloudkura/</string>
+    <string name="web_cloudkura_about">https://cloudkura.com/about/</string>
+
+    <!-- 商品検索結果表示URL -->
+    <string name="weburl1">https://www.amazon.com/s/field-keywords=</string>
+    <string name="weburl2">https://www.amazon.co.uk/s/field-keywords=</string>
+
+    <!-- Webサービス -->
+    <string name="webapi_root_url">https://cloudkura.sakura.ne.jp/ck/</string>
+    <string name="webapi_image_dir">data/items/</string>
+    <string name="webapi_reg_user_session">api/reg_user_session.php</string>
+    <string name="webapi_reg_user_dbdata">api/reg_user_dbdata.php</string>
+    <string name="webapi_get_item_list">api/get_item_list.php</string>
+    <string name="webapi_get_item_by_barcode">api/get_item_by_barcode.php</string>
+    <string name="webapi_get_synonym">api/get_memo_list.php</string>
+
+    <!-- UPC検索用URL -->
+    <string name="web_api_search_upc_url">https://www.barcodespider.com/</string>
+
+    <!-- 楽天API情報 -->
+    <string name="web_api_rakuten_url">https://app.rakuten.co.jp/services/api/IchibaItem/Search/20140222?format=json</string>
+    <string name="web_api_rakuten_application_id">1083495911012074286</string>
+    <string name="web_api_rakuten_application_secret">963091e10886d56ee39caf0cb153662f05f14c03</string>
+    <string name="web_api_rakuten_affiliate_id">15920cba.178695fa.15920cbb.b4a56e25</string>
+
+    <!-- for test
+    <string name="rewarded_video_ad_unit_id">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+     -->
+
+    <!-- for cloudkura2017 -->
+    <!-- 未使用
+    <string name="rewarded_video_ad_unit_id">ca-app-pub-4696816491799748/7479426311</string>
+    -->
+    <string name="banner_ad_unit_id">ca-app-pub-4696816491799748/8033303544</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-4696816491799748/2610243014</string>
+
+    <!-- バーコード読取の時間(単位:秒) -->
+    <string name="barcode_detect_count_down_second_time">7</string>
+
+    <!-- Cloud Kura -->
+    <string name="notification_app_title">Notification from Cloud Kura</string>
+    <string name="notification_app_message">About. </string>
+    <string name="alert_dialog_title_confirm">Confirmation</string>
+    <string name="alert_dialog_button_yes">Yes</string>
+    <string name="alert_dialog_button_no">No</string>
+    <string name="message_add_stock_list">Updated</string>
+    <string name="message_delete_item">Deleted</string>
+    <string name="item_no_name">No item name</string>
+    <string name="remain_days_display_label">Rest: </string>
+    <string name="passed_days_display_label">Expired: </string>
+    <string name="days_display">%d day(s)</string>
+    <string name="search_button">Search</string>
+    <string name="regist_button">Register</string>
+
+    <string name="graph_title">Pie Chart</string>
+    <string name="limit_day_tab">Best-Before Date</string>
+    <string name="wishlist_title">Shopping List</string>
+
+    <string name="limit_day_over">RED - Expired</string>
+    <string name="limit_day_in1month">AMBER - Before 30 days</string>
+    <string name="limit_day_in1year">GREEN - Over 31 days</string>
+    <string name="limit_day_other">BLUE - Over 1 year</string>
+
+    <string name="limit_day_over_detail">Expired</string>
+    <string name="limit_day_in1month_detail">Before 30 days</string>
+    <string name="limit_day_in1year_detail">Over 31 days</string>
+    <string name="limit_day_other_detail">Over 1 year</string>
+
+    <string name="limit_day_alert">Notification period</string>
+    <string name="manage_delete_explain">Select on-tap</string>
+    <string name="status_explain_no_data">No Item</string>
+    <string name="status_explain_passed_limit_day_item">RED</string>
+    <string name="status_explain_in_half_year_limit">AMBER</string>
+    <string name="status_explain_satisfiction">GREEN</string>
+    <string name="recognise_barcode_init">Item from barcode</string>
+    <string name="recognise_barcode_search_item_info">Barcode found. \nSearching for the item.</string>
+    <string name="tab_title_itemlist">ITEM</string>
+    <string name="tab_title_home">HOME</string>
+    <string name="tab_title_no_stock">Shopping \nList</string>
+    <string name="navigation_drawer_open">drawer_open</string>
+    <string name="navigation_drawer_close">drawer_close</string>
+    <string name="left_menu_setting">Best-Before Date</string>
+    <string name="left_menu_alert_onoff_title">Notifications</string>
+    <string name="left_menu_alert_span_title">Notification start date</string>
+    <string name="left_menu_other_setting">Other settings</string>
+    <string name="left_menu_show_last_launched_datetime">Last access date</string>
+    <string name="left_menu_show_notice_popup">Display \'Information\'</string>
+    <string name="left_menu_show_display_colnum">Display with bigger picture</string>
+    <string name="left_menu_show_display_unit">Display with item unit</string>
+    <string name="left_menu_show_no_stock_item">Display item without stocks</string>
+    <string name="left_menu_show_under_button">Display under button</string>
+    <string name="left_menu_copy_right">© 2017 Cloud Kura inc.</string>
+    <string name="left_menu_do">Yes</string>
+    <string name="left_menu_not_do">No</string>
+    <string name="left_menu_display">Yes</string>
+    <string name="left_menu_not_display">No</string>
+    <string name="left_menu_move_to_web_link">How to use \n(Move to our website)</string>
+    <string name="left_menu_web_sync">Cloud Backup</string>
+    <string name="left_menu_web_sync_status_offline">---</string>
+    <string name="edit_item_title_image">Picture of Items</string>
+    <string name="edit_item_title_memo">Item Name</string>
+    <string name="edit_item_title_stock">Best-Before Date / Qty</string>
+    <string name="delete_item_notice_title">Deleted</string>
+    <string name="delete_item_confirm">Add new stocks?</string>
+    <string name="delete_item_notice_affiriate">Affiliate link </string>
+    <string name="permission_name_strage">Strage</string>
+    <string name="permission_name_camera">Camera</string>
+    <string name="permission_name_system_alert">Overlay</string>
+    <string name="no_item">No item</string>
+    <string name="stop_photographing">Cancel</string>
+    <string name="regist_title_add">Add</string>
+    <string name="regist_title_edit">Edit</string>
+    <string name="regist_next_button">Next</string>
+    <string name="regist_prev_button">Back</string>
+    <string name="regist_regist_button">Register</string>
+    <string name="regist_update_button">Update</string>
+    <string name="regist_cancel_button">Cancel</string>
+    <string name="regist_add_list_button">Add to ITEM</string>
+    <string name="regist_title_image">Item picture</string>
+    <string name="regist_title_scan_barcode">Barcode</string>
+    <string name="notify_over_limit_day">RED - Expired:</string>
+    <string name="notify_today">Today: </string>
+    <string name="notify_in_days">within %dday(s): </string>
+    <string name="notify_in_future_limit">Limit date: </string>
+    <string name="notify_item_unit">PCS</string>
+    <string name="search_by_barcode">Barcode Search</string>
+    <string name="search_by_item_name">Search for Item name</string>
+    <string name="menu_regist_item">Item Register</string>
+    <string name="menu_regist_wishlist">Add to Shopping List</string>
+    <string name="menu_delete_item_by_barcode">Barcode Removal</string>
+    <string name="menu_delete_item_by_item_name">Search / Remove</string>
+    <string name="menu_delete_item_by_item_name_comment"> </string>
+    <string name="message_not_connect_change_manual">Change manual registration? \nNo network</string>
+    <string name="message_not_connect_network">No network</string>
+    <string name="message_item_not_found_change_manual">Change manual registration? \nCould not find item</string>
+    <string name="message_cancel_editing_close_dialog">Cancel register?</string>
+    <string name="message_not_scan_barcode_change_manual">Change manual registration? \nNo barcode</string>
+    <string name="message_failed_save_image">Could not save the data</string>
+    <string name="message_failed_create_directory">Could not create the folder</string>
+    <string name="message_failed_delete_image">Could not remove item file</string>
+    <string name="message_not_specify_url">No URL</string>
+    <string name="message_not_scan_barcode">Could not find barcode</string>
+    <string name="message_not_ready_barcode_recognitive_by_not_enough_strage">Could not implement required function \nfor barcode - No memory space</string>
+    <string name="message_already_regsited_same_limitday_item">The items already registered. \nDo you want to add?\n\n</string>
+    <string name="message_add_stock_limit_day">Best-Before Date:</string>
+    <string name="message_add_stock_count">Quantity:</string>
+    <string name="message_add_stoc_count_before_after_sign"><![CDATA[->]]></string>
+    <string name="message_not_add_by_limit_over">Cannot change the qty. \nHit the max limit.</string>
+    <string name="message_title_count">Qty</string>
+    <string name="message_input_count">Input Qty</string>
+    <string name="message_title_image">Item picture</string>
+    <string name="message_appoint_image">Identify </string>
+    <string name="message_in_item_name">Item name \'</string>
+    <string name="message_contain_in_item_name">\' Included</string>
+    <string name="message_title">Barcode: </string>
+    <string name="message_all_item">All items</string>
+    <string name="message_explain_tap_to_select">Item Search/Removal</string>
+    <string name="message_please_select">Select</string>
+    <string name="message_confirm_delete">Item removal?</string>
+    <string name="message_confirm_hide">Hide from Shopping List?</string>
+    <string name="message_not_regist_item_name">No item name</string>
+    <string name="message_select_count">number: </string>
+    <string name="message_sum_count">TOTAL\n</string>
+    <string name="message_no_detail_info">No detail</string>
+    <string name="message_confirm_delete_item">Delete item? \nAll items detail will be removed</string>
+    <string name="no_item_no_display_data">No data </string>
+    <string name="lets_start_control_item">Stock management \nwith registering new item</string>
+    <string name="release_selected_item">Deselect</string>
+    <string name="delete_item">Removal</string>
+    <string name="item_prop_barcode">Barcode</string>
+    <string name="messeage_setting_alert_notify">Setting of Notification for \'Best-Before Date\'</string>
+    <string name="messeage_setting_dont_do">No</string>
+    <string name="messeage_setting_do">Yes</string>
+    <string name="messeage_setting_days_ago"> days</string>
+    <string name="setting_title_display_setting">Confirmation</string>
+    <string name="no_stock_input_hide">Hide</string>
+    <string name="messeage_setting_image_size">Configuration to display \nwith bigger pictures? \nYes - 2 lines, No - 3 lines</string>
+    <string name="setting_not_display">No</string>
+    <string name="setting_display">Yes</string>
+    <string name="messeage_setting_summary_each_item">Configuration1</string>
+    <string name="messeage_setting_display_no_stock_item">Configuration2</string>
+    <string name="messeage_setting_show_shortcut_buttons">Configuration3</string>
+    <string name="messeage_setting_display_notify_dialog_on_launch">Configuration4</string>
+    <string name="message_no_item">No item</string>
+    <string name="message_no_pre_consumption_item">No Pre-consumption Item</string>
+    <string name="delete_selected_item_sign">X</string>
+    <string name="button_buy_on_weburl1">amazon</string>
+    <string name="button_buy_on_weburl2">amazon.co.uk</string>
+    <string name="button_add_to_buy_list">Shopping List</string>
+    <string name="button_delete_item">Item Removal</string>
+    <string name="close_dialog">Close</string>
+    <string name="message_is_display_checked_item">Checked Item</string>
+    <string name="message_scan_barcode_on_item">Get barcode from item</string>
+    <string name="button_photography_item">Item picture</string>
+    <string name="message_cant_change_image_name_after_regist">Could not change the name/picture</string>
+    <string name="message_input_item_name">Put item name in</string>
+    <string name="message_no_stock">No stock</string>
+    <string name="message_confirm_quit">Are you sure you want to exit?</string>
+    <string name="message_permission_alert_title">Permission error</string>
+    <string name="message_permission_alert_confirm">Needs access to "[@1]" \nRestart Now?</string>
+    <string name="message_permission_alert_reset">Selected not to grant permission anymore.\nGrant permission on Settings-Apps-Permissions.</string>
+
+    <string name="item_list_display_limit_date">Display Date</string>
+    <string name="item_list_display_order_item">Order by Item</string>
+
+    <!-- Auth -->
+    <string name="welcome">Welcome</string>
+    <string name="welcome_message">Sign In to get the best of Cloud Kura.</string>
+    <string name="signin">Sign In</string>
+    <string name="in_progress">In Progress</string>
+    <string name="signout">Sign Out</string>
+    <string name="signin_success">Sign In Success</string>
+    <string name="signin_failed">Sign In Failed</string>
+    <string name="about_us">About Us</string>
+    <string name="tap_to_sync">Tap to Sync</string>
+
+    <!-- sync setting -->
+    <string name="sync_setting_start">Init Process</string>
+    <string name="sync_setting_sync_now">Sync Now</string>
+    <string name="sync_result_no_sync_data">Latest State Now.</string>
+    <string name="sync_in_process">(In Process)</string>
+
+    <!-- Widget -->
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add Widget</string>
+</resources>

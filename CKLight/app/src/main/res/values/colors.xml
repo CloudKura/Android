@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- #0495ef -->
+    <color name="colorPrimary">#2a83a2</color>
+    <!--
+    <color name="colorPrimary">#006ebd</color>
+    -->
+    <color name="colorPrimaryDark">#2a83a2</color>
+    <color name="colorAccent">#2a83a2</color>
+    <!--
+    <color name="colorAccent">#006ebd</color>
+    -->
+    <color name="colorTabUnder">#ffffff</color>
+    <color name="colorFabBackground">#99ffffff</color>
+    <color name="colorTextColor">#ffffff</color>
+    <color name="colorStatusInfo">#006a6c</color>
+    <color name="colorAlertTextColor">#333333</color>
+    <color name="colorCardBackground">#ff0000</color>
+    <color name="colorNormal">#555555</color>
+    <color name="colorCloseText">#aaaaaa</color>
+    <color name="colorBorderLine">#aaaaaa</color>
+
+    <color name="colorItemDetail">#ffffff</color>
+    <!-- <color name="colorItemDetail">#e6e6fa</color> -->
+
+    <color name="colorNoData">#2a83a2</color>
+    <color name="colorInfo">#2a83a2</color>
+    <color name="colorAlert">#ff8500</color>
+    <color name="colorExclamation">#dd5548</color>
+    <color name="colorNoInformation">#99cccc</color>
+
+    <color name="colorInfoDark">#2a83a2</color>
+    <color name="colorAlertDark">#ff8500</color>
+    <color name="colorExclamationDark">#dd5548</color>
+
+    <color name="colorButtonOK">#ffa500</color>
+    <color name="colorButtonFront">#ffffff</color>
+
+    <color name="colorTabBackColor">#ffffff</color>
+    <color name="colorHomeBackColor">#ffffff</color>
+
+    <color name="colorBarcodeExplainBackground">#99ffffff</color>
+
+    <color name="colorDeleteSelect">#66000000</color>
+    <color name="colorGridDetail">#ffffff</color>
+    <color name="colorGridDetailTextColor">#ffffff</color>
+    <color name="colorGridDetailItemHeader">#ffffff</color>
+    <color name="colorButtonTextNormal">#808080</color>
+
+    <color name="colorStockCountLabelInGrid">#aaaaaaaa</color>
+    <color name="colorButtonBack">#ffffff</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="colorRegistDialogBackground">#11000000</color>
+    <color name="colorSynonymListBackground">#99ffffff</color>
+
+    <color name="colorFavoriteOn">#ff8500</color>
+    <color name="colorFavoriteOff">#332a83a2</color>
+
+    <color name="colorOnTouchAnim">#332a83a2</color>
+
+    <color name="colorMessageArea">#332a83a2</color>
+</resources>

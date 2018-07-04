@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_edit_item_memo_layer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/row_edit_item_info_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:textColor="@color/colorCloseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:textSize="6pt"
+            android:text="@string/edit_item_title_memo"
+            android:gravity="center|start"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@android:color/white"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <EditText
+                    android:id="@+id/row_edit_item_info_item_name_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="7pt"
+                    android:text="あいうえおかきくけこさしすせそたちつてと"
+                    android:hint="@string/message_input_item_name"
+                    android:gravity="start|top"
+                    android:textColor="@color/colorNormal"
+                    android:padding="3dp"
+                    android:layout_marginTop="5dp"
+                    android:lines="3"
+                    android:background="@drawable/ic_item_text"
+                    android:textCursorDrawable="@drawable/style_cursor"
+                    android:inputType="textMultiLine"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_weight="1"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:id="@+id/row_edit_item_info_text_count"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/colorCloseText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="6pt"
+                            android:text="20"
+                            />
+
+                        <TextView
+                            android:id="@+id/row_edit_item_info_text_count_max"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/colorCloseText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="6pt"
+                            android:text=" / 100"
+                            />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/row_edit_item_memo_keyboard"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="-5dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_action_keyboard"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/row_edit_item_info_synonym_words"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_synonym_list"
+                android:textColor="@color/colorNormal"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:smoothScrollbar="true"
+                android:fadeScrollbars="false"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
